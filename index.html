@@ -128,13 +128,22 @@
 <header>
   <img src="./Photo/logo.png" alt="Logo" class="logo">
   <style>
+ header img.logo {
+  width: 80px;  /* Small size by default (mobile) */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* For larger screens (laptop and above), increase logo size */
+@media(min-width: 768px) {
   header img.logo {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    width: 120px;  /* Bigger size on desktop */
+    height: auto;  /* Keep aspect ratio */
+    border-radius: 0; /* Optional: remove rounded corners */
   }
+}
 </style>
   <h1>Ksquarefeet — Interior Design</h1>
   <p class="lead">We are the best interior designers in Pune, creating modern, timeless spaces with passion and precision.</p>
@@ -284,6 +293,7 @@
 
 </body>
 </html>
+
 
 
 
