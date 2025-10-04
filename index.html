@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ksquarefeet — Interior Designr</title>
+  <title>Ksquarefeet — Interior Design</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
@@ -121,30 +121,29 @@
     .testimonial-slider::-webkit-scrollbar { height:6px; }
     .testimonial-slider::-webkit-scrollbar-thumb { background:var(--accent); border-radius:3px; }
 
+    /* Logo styling */
+    header img.logo {
+      width: 80px;  /* Small size by default (mobile) */
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    /* For larger screens (laptop and above), increase logo size */
+    @media(min-width: 768px) {
+      header img.logo {
+        width: 120px;  
+        height: 120px;  /* Fixed height for consistent aspect ratio */
+        border-radius: 0; /* Optional: remove rounded corners */
+      }
+    }
   </style>
 </head>
 <body>
 
 <header>
   <img src="./Photo/Logo.png" alt="Logo" class="logo">
-  <style>
- header img.logo {
-  width: 80px;  /* Small size by default (mobile) */
-  height: 80px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-/* For larger screens (laptop and above), increase logo size */
-@media(min-width: 768px) {
-  header img.logo {
-    width: 120px;  /* Bigger size on desktop */
-    height: auto;  /* Keep aspect ratio */
-    border-radius: 0; /* Optional: remove rounded corners */
-  }
-}
-</style>
   <h1>Ksquarefeet — Interior Design</h1>
   <p class="lead">We are the best interior designers in Pune, creating modern, timeless spaces with passion and precision.</p>
   <a href="#contact" class="cta">Book a Free Consultation</a>
@@ -181,26 +180,25 @@
     <h2>Meet the Founder</h2>
     <div class="about-extra">
       <div>
-        <h3>Hello, I'm Kirti Tiwari  </h3>
+        <h3>Hello, I'm Kirti Tiwari</h3>
         <p>With years of experience in crafting residential and commercial interiors, I started Ksquarefeet to bring world-class design expertise to Pune. I believe in blending modern aesthetics with practical comfort.</p>
         <p style="margin-top:12px;font-weight:600;">📞 Contact: +91 98765 43210</p>
       </div>
- <!--<img src="path-to-your-photo.jpg" alt="Founder Photo">-->
+      <img src="./Photo/founder.jpg" alt="Founder Photo" style="border-radius:12px; max-width:300px; width:100%;">
     </div>
   </section>
 
   <!-- Video Section -->
-<section id="video" style="text-align:center;">
-  <h2>Watch Our Work</h2>
-  <p>Click the video below to see our interior design projects in action.</p>
-  <div style="display:inline-block;cursor:pointer;position:relative;max-width:640px;" id="video-thumbnail" data-video-id="https://youtube.com/shorts/7bqhI-0c_00?feature=share">
-    <img src="path-to-thumbnail.jpg" alt="Video Thumbnail" style="width:100%;border-radius:12px;">
-    <i class="fas fa-play" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:var(--accent);opacity:0.9;"></i>
-  </div>
-</section>
+  <section id="video" style="text-align:center;">
+    <h2>Watch Our Work</h2>
+    <p>Click the video below to see our interior design projects in action.</p>
+    <div style="display:inline-block;cursor:pointer;position:relative;max-width:640px;" id="video-thumbnail" data-video-url="https://youtube.com/shorts/7bqhI-0c_00?feature=share">
+      <img src="./Photo/video-thumbnail.jpg" alt="Video Thumbnail" style="width:100%;border-radius:12px;">
+      <i class="fas fa-play" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:60px;color:var(--accent);opacity:0.9;"></i>
+    </div>
+  </section>
 
-
-  <!--  Client Feedback Section -->
+  <!-- Client Feedback Section -->
   <section id="client-feedback">
     <h2>Client Feedback</h2>
     <div class="testimonial-slider">
@@ -235,81 +233,45 @@
       📞 <a href="tel:+917038598316">+91 7038598316 </a>
     </p>
     <p>
-      📧 <a href="mailto:ksquarefeetinterior@gmail.com">ksquarefeetinterior@gmail.com</a>
-    </p>
-    <p style="margin-top:20px;">
-      💬 <a href="https://wa.me/917038598316" target="_blank" rel="noopener" style="color:var(--whatsapp); font-weight:600; text-decoration:none;">
-        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-      </a>
+      📧 <a href="mailto:ksquarefeetofficial@gmail.com">ksquarefeetofficial@gmail.com</a>
     </p>
   </section>
 
   <!-- Social Media Section -->
   <section id="social-media" style="text-align:center;">
-    <h2>Follow Us on Social Media</h2>
-    <div style="margin-top:16px; display:flex; justify-content:center; gap:24px;">
-      <a href="https://facebook.com/ksquarefeet" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/ksquarefeet/?igsh=MWNnc29iYjI0N2Yydg%3D%3D#" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.instagram.com/ksquarefeet" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <h2>Social Media</h2>
+    <p>Follow us on our social channels for more updates and designs:</p>
+    <div style="display:flex; justify-content:center; gap:24px; font-size:32px;">
+      <a href="https://instagram.com/ksquarefeet" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="https://wa.me/917038598316" target="_blank" rel="noopener" aria-label="WhatsApp" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.linkedin.com/company/ksquarefeet" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </section>
+
 </main>
 
 <footer>
-  <p>© 2025 Mayank Chourasia. All rights reserved.</p>
+  &copy; 2025 Ksquarefeet. All rights reserved.
 </footer>
 
 <script>
-  // Smooth scroll & active link toggling
-  const navLinks = document.querySelectorAll('nav a.nav-link');
-
-  function setActiveLink() {
-    let fromTop = window.scrollY + 120; // offset for header
-    navLinks.forEach(link => {
-      const section = document.querySelector(link.getAttribute('href'));
-      if (
-        section.offsetTop <= fromTop &&
-        (section.offsetTop + section.offsetHeight) > fromTop
-      ) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-      }
-    });
-  }
-
-  navLinks.forEach(link => {
+  // Smooth scroll for nav links
+  document.querySelectorAll('nav a.nav-link').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      const target = document.querySelector(link.getAttribute('href'));
-      target.scrollIntoView({behavior:'smooth', block:'start'});
-      navLinks.forEach(l => l.classList.remove('active'));
+      document.querySelectorAll('nav a.nav-link').forEach(a => a.classList.remove('active'));
       link.classList.add('active');
+      const target = link.getAttribute('href');
+      document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
     });
   });
 
-  window.addEventListener('scroll', setActiveLink);
-  window.addEventListener('load', setActiveLink);
+  // Video thumbnail click opens YouTube video in new tab
+  document.getElementById('video-thumbnail').addEventListener('click', () => {
+    const videoUrl = document.getElementById('video-thumbnail').dataset.videoUrl;
+    window.open(videoUrl, '_blank');
+  });
 </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
